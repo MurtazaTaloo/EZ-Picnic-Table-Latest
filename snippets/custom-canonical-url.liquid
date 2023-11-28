@@ -1,0 +1,5 @@
+{% assign custom_canonical_url = canonical_url %}
+{% if canonical_url contains '/products/ez-picnic-table-the-ultimate-low-picnic-table-for-outdoor-adventures' %}
+  {% assign custom_canonical_url = shop.url %}
+{% endif %}
+<link rel="canonical" href="{{ custom_canonical_url }}" />
